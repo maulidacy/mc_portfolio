@@ -21,8 +21,23 @@ type Project = {
   href: string;
 };
 
-const IMG =
-  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1762854945/SITEMU_gxz5sp.png";
+const IMG_SITEMU =
+  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1772634213/5_mkr5ld.png";
+
+const IMG_TRAVELEASE =
+  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1772634207/1_pnicar.png";
+
+const IMG_FIACAHYA =
+  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1772634213/2_e2akoa.png";
+
+const IMG_KOS =
+  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1772634211/6_h0yhk2.png";
+
+const IMG_TEMP =
+  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1772634209/3_iag5j7.png";
+
+const IMG_TODO =
+  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1772634210/4_ykvv5b.png";
 
 export default function Projects() {
 
@@ -41,10 +56,10 @@ export default function Projects() {
 
     {
       id: 1,
-      title: "SITEMU — Lost & Found Platform",
+      title: "SITEMU - Lost & Found Platform",
       desc: "A web platform for reporting and discovering lost items within the university environment. Designed to help students reconnect with their belongings through a centralized reporting system.",
       tags: ["Next.js", "Tailwind", "Database"],
-      imageUrl: IMG,
+      imageUrl: IMG_SITEMU,
       href: "https://sitemudinus.vercel.app/"
     },
 
@@ -53,7 +68,7 @@ export default function Projects() {
       title: "TravelEase - Smart Travel Budget Planner",
       desc: "A Machine Learning-powered travel budgeting tool that helps users estimate travel costs and plan efficient trips based on personalized preferences.",
       tags: ["Python", "Streamlit", "Machine Learning"],
-      imageUrl: IMG,
+      imageUrl: IMG_TRAVELEASE,
       href: "https://travelease.streamlit.app/"
     },
 
@@ -62,7 +77,7 @@ export default function Projects() {
       title: "Fiacahya Snack - E-Commerce with AI Chatbot",
       desc: "An e-commerce website for a local snack business featuring an integrated AI chatbot that assists users in exploring products and receiving recommendations.",
       tags: ["Next.js", "OpenAI API", "Chatbot"],
-      imageUrl: IMG,
+      imageUrl: IMG_FIACAHYA,
       href: "https://fiacahya-snack.vercel.app/"
     },
 
@@ -71,7 +86,7 @@ export default function Projects() {
       title: "Kos Maintenance Management System",
       desc: "A web-based system designed to manage boarding house maintenance requests and track facility repairs efficiently.",
       tags: ["Next.js", "CRUD", "Web App"],
-      imageUrl: IMG,
+      imageUrl: IMG_KOS,
       href: "https://kos-maintenance.vercel.app/"
     },
 
@@ -80,7 +95,7 @@ export default function Projects() {
       title: "Temperature Converter Web App",
       desc: "A responsive web application that converts temperature values across different units with a simple and intuitive interface.",
       tags: ["HTML", "JavaScript", "Frontend"],
-      imageUrl: IMG,
+      imageUrl: IMG_TEMP,
       href: "https://konversisuhu-42a8bc.netlify.app/"
     },
 
@@ -89,7 +104,7 @@ export default function Projects() {
       title: "To-Do List Task Manager",
       desc: "A lightweight task management web app that helps users organize daily activities and track productivity.",
       tags: ["JavaScript", "Frontend"],
-      imageUrl: IMG,
+      imageUrl: IMG_TODO,
       href: "https://glowing-sfogliatella-9b0715.netlify.app/"
     }
 
