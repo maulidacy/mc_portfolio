@@ -99,7 +99,7 @@ export default function Achievements() {
       icon: BadgeCheck,
     },
     {
-      title: "Hacktiv8 × IBM SkillsBuild (Student Developer Initiative)",
+      title: "Hacktiv8 x IBM SkillsBuild (Student Developer Initiative)",
       subtext: "Code Generation & Optimization Program.",
       date: "Dec 2025",
       icon: BadgeCheck,
