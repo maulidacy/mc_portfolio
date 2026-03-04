@@ -14,7 +14,7 @@ This repository contains my personal portfolio website, showcasing my work, skil
 
 This portfolio is a modern, interactive web application designed to highlight my projects, experience, and technical expertise. It features smooth animations, a clean responsive design, and optimized performance to deliver an exceptional user experience.
 
-Whether you're a recruiter, fellow developer, or just curious about my work — welcome! Feel free to explore and get in touch.
+Whether you're a recruiter, fellow developer, or just curious about my work - welcome! Feel free to explore and get in touch.
 
 ---
 
