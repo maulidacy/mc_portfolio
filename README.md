@@ -1,238 +1,176 @@
-# 👋 Hi, I'm **Maulida Cahya Kurnia**
+# Maulida Cahya Kurnia
 
-```{=html}
-<p align="center">
+AI Engineer | Applied Machine Learning | Fullstack Developer
+
+---
+
+Hi there! I'm Maulida, an AI Engineer and Fullstack Developer passionate about building intelligent systems and scalable applications that make a real impact.
+
+This repository contains my personal portfolio website, showcasing my work, skills, and journey in AI and software development.
+
+---
+
+## About This Project
+
+This portfolio is a modern, interactive web application designed to highlight my projects, experience, and technical expertise. It features smooth animations, a clean responsive design, and optimized performance to deliver an exceptional user experience.
+
+Whether you're a recruiter, fellow developer, or just curious about my work — welcome! Feel free to explore and get in touch.
+
+---
+
+## Features
+
+- Animated intro screen with engaging first impression
+- Smooth UI transitions and micro-interactions
+- Fully responsive design for all devices
+- Clean and modern user interface
+- Performance-optimized for fast loading times
+- Accessible and SEO-friendly structure
+- Dark/Light mode support
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Next.js | React framework for production-grade applications |
+| React | UI component library |
+| TypeScript | Type-safe JavaScript development |
+| Tailwind CSS | Utility-first CSS framework |
+| Framer Motion | Smooth animations and transitions |
+| Lucide React | Icon library |
+| Cloudinary | Media management and optimization |
+| Vercel | Deployment and hosting platform |
+
+---
+
+## Preview
+
+> [!NOTE]
+> Screenshot coming soon! The live demo is available below.
+
+---
+
+## Live Demo
+
+Check out the live portfolio: [maulida.vercel.app](https://maulida.vercel.app/)
+
+---
+
+## Project Structure
+
 ```
-`<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=800&color=6366F1&center=true&vCenter=true&width=600&lines=AI+Engineer+%7C+Applied+Machine+Learning;Building+Intelligent+Systems;Fullstack+Developer;Creating+Scalable+Applications" />`{=html}
-```{=html}
-</p>
+mc_portfolio/
+├── app/                    # Next.js app directory
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Main page
+│   ├── globals.css        # Global styles
+│   └── providers.tsx      # Context providers
+├── components/            # React components
+│   ├── effects/           # Visual effects
+│   ├── intro/             # Introduction components
+│   ├── layout/            # Layout components
+│   ├── motion/            # Animation components
+│   ├── nav/               # Navigation components
+│   ├── sections/          # Page sections
+│   └── ui/                # UI components
+├── data/                  # Data files
+│   └── portfolio.ts       # Portfolio data
+├── hooks/                 # Custom React hooks
+├── lib/                   # Utility functions
+├── public/                # Static assets
+├── next.config.ts         # Next.js configuration
+├── tailwind.config.ts     # Tailwind CSS configuration
+└── tsconfig.json          # TypeScript configuration
 ```
-```{=html}
-<p align="center">
-```
-`<b>`{=html}AI Engineer • Applied Machine Learning • Fullstack
-Developer`</b>`{=html}`<br/>`{=html} Passionate about building
-intelligent systems and scalable applications.
-```{=html}
-</p>
-```
 
-------------------------------------------------------------------------
+---
 
-# 🌐 Personal Portfolio
+## Getting Started
 
-This repository contains my **personal portfolio website**, designed to
-showcase my projects, technical skills, experience, and achievements as
-an **AI Engineer and Applied Machine Learning Developer**.
+Follow these steps to run the project locally:
 
-The portfolio focuses on delivering a **modern interface, smooth user
-experience, and optimized performance** while presenting my work in a
-clean and engaging way.
+### 1. Clone the Repository
 
-🔗 Repository:\
-https://github.com/maulidacy/mc_portfolio
-
-------------------------------------------------------------------------
-
-# ✨ Features
-
-### 🎬 Animated Intro Experience
-
-An interactive terminal-style introduction that welcomes visitors into
-the portfolio.
-
-### 🎨 Smooth UI Animations
-
-Elegant transitions and micro-interactions powered by modern animation
-libraries.
-
-### 📱 Fully Responsive Design
-
-The interface is designed to work seamlessly across:
-
--   Desktop
--   Tablet
--   Mobile devices
-
-### ⚡ Optimized Performance
-
-The site focuses on:
-
--   Fast loading times
--   Efficient component rendering
--   Lightweight architecture
-
-### 🧩 Modular Architecture
-
-The codebase is structured with reusable and maintainable components for
-long‑term scalability.
-
-------------------------------------------------------------------------
-
-# 🛠 Tech Stack
-
-  Category        Technology
-  --------------- ---------------
-  Framework       Next.js
-  Language        TypeScript
-  Styling         Tailwind CSS
-  Animations      Framer Motion
-  Icons           Lucide React
-  Themes          next-themes
-  Image Hosting   Cloudinary
-  Deployment      Vercel
-
-------------------------------------------------------------------------
-
-# 👀 Preview
-
-![Portfolio
-Preview](https://placehold.co/1200x700/0f172a/a78bfa?text=Portfolio+Preview)
-
-> Replace this image with a screenshot of your portfolio homepage.
-
-------------------------------------------------------------------------
-
-# 🌍 Live Demo
-
-You can view the live portfolio here:
-
-https://your-portfolio.vercel.app
-
-------------------------------------------------------------------------
-
-# 📂 Project Structure
-
-    src
-     ├─ app
-     ├─ components
-     │   ├─ ui
-     │   ├─ intro
-     │   ├─ effects
-     │   └─ motion
-     ├─ sections
-     ├─ hooks
-     ├─ styles
-     └─ utils
-
-The project structure is organized to keep components modular, reusable,
-and easy to maintain.
-
-------------------------------------------------------------------------
-
-# 🏃 Getting Started
-
-Follow these steps to run the project locally.
-
-## 1. Clone the repository
-
-``` bash
+```bash
 git clone https://github.com/maulidacy/mc_portfolio.git
-```
-
-## 2. Navigate to the project directory
-
-``` bash
 cd mc_portfolio
 ```
 
-## 3. Install dependencies
+### 2. Install Dependencies
 
-``` bash
+```bash
 npm install
 ```
 
-## 4. Run the development server
+### 3. Run the Development Server
 
-``` bash
+```bash
 npm run dev
 ```
 
-Open:
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
-http://localhost:3000
+---
 
-------------------------------------------------------------------------
+## Build for Production
 
-# 📦 Build for Production
+To create an optimized production build:
 
-``` bash
+```bash
 npm run build
-npm start
 ```
 
-------------------------------------------------------------------------
+The build output will be in the `.next` directory.
 
-# 🚢 Deployment
+---
 
-The project is optimized for **Vercel deployment**.
+## Deployment
 
-Steps:
+This project is deployed on **Vercel**, the platform created by the makers of Next.js.
 
-1.  Push the repository to GitHub
-2.  Import the project in Vercel
-3.  Deploy instantly
+### Deploy with Vercel
 
-Vercel automatically detects the Next.js configuration and applies the
-optimal build settings.
+1. Push your code to a GitHub repository
+2. Go to [Vercel](https://vercel.com) and sign up
+3. Click "Add New Project" and select your repository
+4. Vercel will automatically detect Next.js and configure the build settings
+5. Click "Deploy" and your site will be live in minutes
 
-------------------------------------------------------------------------
+For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
 
-# 🚧 Future Improvements
+---
 
-Planned improvements include:
+## Future Improvements
 
--   Adding AI project demonstrations
--   Integrating a technical blog
--   Improving accessibility
--   Adding project filtering
--   Introducing interactive data visualizations
+I'm continuously working to enhance this portfolio. Here are some planned features:
 
-------------------------------------------------------------------------
+- Blog section for technical articles and tutorials
+- More interactive project showcases
+- Enhanced accessibility features
+- Additional animation effects
+- Integration with a CMS for easier content management
 
-# 🤝 Let's Connect
+---
 
-I'm always open to collaboration, discussions about AI/ML, or building
-innovative software projects.
+## Let's Connect
 
-```{=html}
-<p align="center">
-```
-`<a href="https://github.com/maulidacy">`{=html}
-`<img src="https://img.shields.io/badge/GitHub-333?style=for-the-badge&logo=github&logoColor=white"/>`{=html}
-`</a>`{=html}
+I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
 
-`<a href="https://linkedin.com">`{=html}
-`<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>`{=html}
-`</a>`{=html}
+- **GitHub**: [github.com/maulidacy](https://github.com/maulidacy)
+- **LinkedIn**: [linkedin.com/in/maulidacahyakurnia]( https://www.linkedin.com/in/maulidacahyakurnia)
+- **Email**: cahyamaulida011@gmail.com
 
-`<a href="mailto:your.email@example.com">`{=html}
-`<img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>`{=html}
-`</a>`{=html}
+Don't forget to star this repository if you found it interesting!
 
-```{=html}
-</p>
-```
+---
 
-------------------------------------------------------------------------
+## License
 
-# 📄 License
+This project is open source and available under the [MIT License](LICENSE).
 
-This project is licensed under the **MIT License**.
+---
 
-------------------------------------------------------------------------
+Built with ❤️ using Next.js and Tailwind CSS
 
-```{=html}
-<p align="center">
-```
-⭐ If you like this project, consider giving it a star!
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
-Built with ❤️ using Next.js, TypeScript, Tailwind CSS, and Framer Motion
-```{=html}
-</p>
-```
