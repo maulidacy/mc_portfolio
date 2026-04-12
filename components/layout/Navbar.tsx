@@ -185,7 +185,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-3">
 
                   <a
-                    href="/cv_04.pdf"
+                    href="/cv_maulidacahyakurnia.pdf"
                     download="Maulida_Cahya_Kurnia_CV.pdf"
                     className="hidden items-center gap-2 rounded border border-slate-700 bg-slate-800/40 px-3 py-1.5 font-mono text-[10px] font-bold text-slate-300 transition-all hover:border-blue-900 hover:bg-blue-900/20 hover:text-white md:flex"
                   >

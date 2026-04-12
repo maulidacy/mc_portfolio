@@ -153,7 +153,7 @@ export default function Contact() {
 
           <motion.a
             variants={itemVariants}
-            href="/cv_04.pdf"
+            href="/cv_maulidacahyakurnia.pdf"
             download="Maulida_Cahya_Kurnia_CV.pdf"
             className="group md:col-span-2 flex flex-col items-center justify-center rounded-md border border-slate-800 bg-[#0a0f1a] p-6 text-center transition-all hover:border-slate-600 shadow-xl"
           >

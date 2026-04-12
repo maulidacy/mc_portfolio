@@ -11,9 +11,9 @@ export default function IntroScreen({ onDone }: { onDone: () => void }) {
 
   const lines = useMemo(() => [
     " Initialize maulida-portfolio.sh",
-    " Hello, I'm Maulida Cahya",
-    " Applied Machine Learning • AI Intern",
-    " Building intelligent systems...",
+    " Hello, I'm Maulida Cahya Kurnia",
+    " Applied Machine Learning Engineer • AI Intern",
+    " Building intelligent systems through code, data, and machine learning.",
   ], []);
 
   const totalChars = useMemo(

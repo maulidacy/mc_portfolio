@@ -58,7 +58,7 @@ export default function Footer() {
     { label: "Email", href: "mailto:cahyamaulida011.com", icon: Mail },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/maulidacahyakurnia", icon: Linkedin, external: true },
     { label: "GitHub", href: "https://github.com/maulidacy", icon: Github, external: true },
-    { label: "CV.pdf", href: "/cv_04.pdf", icon: FileText }
+    { label: "CV.pdf", href: "/cv_maulidacahyakurnia.pdf", icon: FileText }
   ], []);
 
   return (

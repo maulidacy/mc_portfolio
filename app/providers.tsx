@@ -1,4 +1,3 @@
-// app/providers.tsx
 "use client";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
