@@ -107,7 +107,7 @@ export default function Contact() {
 
           <motion.a
             variants={itemVariants}
-            href="mailto:cahyamaulida011@gmail.com"
+            href="mailto:maulida.cy@gmail.com"
             className="group relative md:col-span-4 flex flex-col justify-between overflow-hidden rounded-md border border-blue-900 bg-[#0d1321] p-6 transition-all hover:border-blue-700 shadow-2xl"
           >
 

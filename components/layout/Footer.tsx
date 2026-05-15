@@ -55,7 +55,7 @@ export default function Footer() {
   const year = 2026;
 
   const links: LinkItem[] = useMemo(() => [
-    { label: "Email", href: "mailto:cahyamaulida011.com", icon: Mail },
+    { label: "Email", href: "mailto:maulida.cy.com", icon: Mail },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/maulidacahyakurnia", icon: Linkedin, external: true },
     { label: "GitHub", href: "https://github.com/maulidacy", icon: Github, external: true },
     { label: "CV.pdf", href: "/cv_maulidacahyakurnia.pdf", icon: FileText }
@@ -102,11 +102,11 @@ export default function Footer() {
             <div className="max-w-xl">
 
               <h2 className="text-2xl font-black tracking-tighter text-white uppercase sm:text-3xl">
-                Built with <span className="text-blue-900">Next.js</span> & Vercel
+                Building Simple, Useful <span className="text-blue-900">Digital Solutions</span>
               </h2>
 
               <p className="mt-4 text-[13px] leading-relaxed text-slate-400 font-medium max-w-md">
-                A project portfolio focused on code cleanliness, Machine Learning fundamentals, and precise UI implementation.
+                A portfolio of projects focused on web development, data processing, machine learning basics, and practical UI design.
               </p>
 
             </div>

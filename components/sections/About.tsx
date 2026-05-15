@@ -87,21 +87,22 @@ export default function About() {
 
   const facts: Fact[] = useMemo(() => [
     { label: "Location", value: "Grobogan, Indonesia", icon: MapPin },
-    { label: "Focus", value: "AI Engineering & Applied ML", icon: Brain },
-    { label: "Stack", value: "Python, FastAPI, Next.js", icon: Layers },
-    { label: "Goal", value: "AI Engineer Internship", icon: Target },
+    { label: "Focus", value: "Machine Learning & Applied AI", icon: Brain },
+    { label: "Core Stack", value: "Python, Pandas, NumPy, SQL", icon: Layers },
+    { label: "Goal", value: "ML/AI Internship", icon: Target },
   ], []);
 
   const focusChips = useMemo(() => [
     { label: "Machine Learning", icon: Brain },
     { label: "Data Processing", icon: GraduationCap },
     { label: "Model Evaluation", icon: Brain },
-    { label: "AI System Integration", icon: Code2 },
+    { label: "Web-Based ML Apps", icon: Code2 },
   ], []);
 
   const learning = useMemo(() => [
     { label: "Feature Engineering", icon: Brain },
     { label: "Model Evaluation", icon: GraduationCap },
+    { label: "Supabase & SQL", icon: Layers },
     { label: "AI Deployment", icon: Code2 },
   ], []);
 
@@ -190,18 +191,16 @@ export default function About() {
 
             <div className="space-y-4">
 
-              <p className="text-sm leading-relaxed text-slate-600 font-medium italic">
-                I am a Computer Science student at Dian Nuswantoro University with a strong focus on Artificial Intelligence and Applied Machine Learning.
-                I am passionate about building intelligent systems that transform data into practical solutions and real-world applications.
+              <p className="text-sm leading-relaxed text-slate-600 font-medium">
+                I am a Computer Science student at Dian Nuswantoro University with a strong interest in Machine Learning, data processing, and AI-based application development.
               </p>
 
-              <p className="text-sm leading-relaxed text-slate-600 font-medium italic">
-                My interests lie in developing end-to-end AI solutions from data preprocessing and model development to deployment-ready applications.
-                I enjoy exploring how machine learning can be integrated into modern web systems to create scalable and user-centered technology.
+              <p className="text-sm leading-relaxed text-slate-600 font-medium">
+                I enjoy building simple data-driven applications, from data preprocessing, model training, and evaluation to presenting results through user-friendly web interfaces.
               </p>
 
-              <p className="text-sm leading-relaxed text-slate-600 font-medium italic">
-                Currently, I am strengthening my skills in machine learning engineering, model evaluation, and AI deployment while preparing for opportunities as an AI Engineer.
+              <p className="text-sm leading-relaxed text-slate-600 font-medium">
+                Currently, I am strengthening my skills in Machine Learning, model evaluation, SQL, and AI-assisted development while preparing for Machine Learning or AI internship opportunities.
               </p>
 
               <div className="flex flex-wrap gap-1.5">
