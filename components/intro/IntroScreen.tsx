@@ -12,8 +12,8 @@ export default function IntroScreen({ onDone }: { onDone: () => void }) {
   const lines = useMemo(() => [
     " Initialize maulida-portfolio.sh",
     " Hello, I'm Maulida Cahya Kurnia",
-    " Applied Machine Learning Engineer • AI Intern",
-    " Building intelligent systems through code, data, and machine learning.",
+    " Web Development • Data Processing • Machine Learning",
+    " Building practical digital solutions through code and data.",
   ], []);
 
   const totalChars = useMemo(
@@ -187,7 +187,7 @@ export default function IntroScreen({ onDone }: { onDone: () => void }) {
               animate={{ opacity: readyToNext ? 0.65 : 0 }}
               className="text-right font-mono text-[9px] tracking-[0.35em] text-slate-700 uppercase"
             >
-              Handshake_Protocol: Success
+              INTERNSHIP_STATUS: OPEN
             </m.p>
 
           </div>

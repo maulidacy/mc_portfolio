@@ -137,7 +137,7 @@ export default function Hero() {
             <motion.div variants={itemVariants}>
               <div className="inline-flex items-center gap-2 rounded-md border border-blue-900/30 bg-white/55 backdrop-blur px-3 py-1 text-[10px] font-mono font-extrabold tracking-[0.2em] text-slate-900 uppercase shadow-sm">
                 <Code2 className="h-4 w-4" />
-                [ system.status: open_for_internship ]
+                [ AVAILABLE_FOR_INTERNSHIP ]
               </div>
             </motion.div>
 
@@ -154,26 +154,29 @@ export default function Hero() {
                 <div className="text-lg md:text-xl font-mono font-extrabold text-blue-800">
                   <TypingText
                     texts={[
-                      "AI Engineer",
-                      "Applied Machine Learning",
-                      "Fullstack Developer",
+                      "Informatics Engineering Student",
+                      "Web Development",
+                      "Data Processing",
+                      "Machine Learning",
                     ]}
                   />
                 </div>
               </div>
 
               <p className="max-w-xl text-sm sm:text-base leading-relaxed text-slate-600 font-medium">
-                I design and build{" "}
+                I build{" "}
                 <span className="text-slate-950 font-extrabold italic">
-                  intelligent systems
+                  practical web applications
                 </span>{" "}
-                that transform data into real-world solutions.
+                and data-driven solutions for real-world needs.
               </p>
 
             </motion.div>
 
-            <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-2">
-
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-wrap gap-4 pt-2"
+            >
               <Button
                 href="#projects"
                 className="!rounded-md bg-blue-900 hover:bg-slate-950 px-8 py-4 text-white font-extrabold shadow-[0_18px_55px_rgba(0,0,0,0.25)] transition-all hover:-translate-y-1"

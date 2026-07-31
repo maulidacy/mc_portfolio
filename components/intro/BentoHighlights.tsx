@@ -8,20 +8,20 @@ import type { ElementType } from "react";
 
 const items = [
   {
-    title: "Top 20 Winner",
+    title: "Top 20 Final Project",
     subtitle: "Hacktiv8 × IBM SkillsBuild",
     Icon: Award,
     accent: "from-amber-100 to-orange-100 text-amber-700 ring-amber-200/60",
   },
   {
-    title: "IBM ML Specialization",
-    subtitle: "Coursera (Completed)",
+    title: "IBM Machine Learning",
+    subtitle: "Coursera • Completed 2025",
     Icon: BookOpen,
     accent: "from-blue-100 to-indigo-100 text-blue-700 ring-blue-200/60",
   },
   {
-    title: "Next.js + Vercel",
-    subtitle: "Deploy-ready workflow",
+    title: "Web & Data Projects",
+    subtitle: "React • Next.js • Python • Supabase",
     Icon: Rocket,
     accent: "from-emerald-100 to-teal-100 text-emerald-700 ring-emerald-200/60",
   },
