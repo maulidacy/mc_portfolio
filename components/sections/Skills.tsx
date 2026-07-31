@@ -207,25 +207,22 @@ export default function Skills() {
             className="mb-2 inline-flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-blue-800"
           >
             <Code2 className="h-4 w-4" />
-            [ Skills_Overview ]
+            [ Tech_Stack ]
           </motion.div>
 
           <motion.h2
             variants={itemVariants}
-            className="text-3xl font-black tracking-tighter text-slate-900 sm:text-4xl"
+            className="text-3xl font-black uppercase tracking-tighter text-slate-900 sm:text-4xl"
           >
-            Skills &amp;{" "}
-            <span className="text-blue-900">
-              Technologies
-            </span>
+            Tech <span className="text-blue-900">Stack</span>
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
             className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-slate-600"
           >
-            Technologies and tools I have used across web development,
-            data processing, machine learning, and team projects.
+            Technologies and tools I have used across individual, academic,
+            and team projects.
           </motion.p>
         </motion.div>
 
