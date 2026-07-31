@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState, memo, cloneElement } from "react";
+import { useMemo, useState, memo, cloneElement } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {

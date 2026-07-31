@@ -95,20 +95,20 @@ export default function Hero() {
   const cards = useMemo(() => [
     {
       icon: Award,
-      title: "Top 20 Winner",
-      sub: "Hacktiv8 × IBM",
+      title: "TOP 20 FINAL PROJECT",
+      sub: "Hacktiv8 × IBM SkillsBuild",
       color: "text-amber-600",
     },
     {
       icon: GraduationCap,
-      title: "IBM ML Spec",
-      sub: "Coursera Cert",
+      title: "IBM MACHINE LEARNING",
+      sub: "Coursera • Completed 2025",
       color: "text-blue-700",
     },
     {
       icon: Rocket,
-      title: "Cloud Ready",
-      sub: "Next.js + Vercel",
+      title: "WEB & DATA PROJECTS",
+      sub: "React • Next.js • Python • Supabase",
       color: "text-emerald-600",
     },
   ], []);
