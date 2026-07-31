@@ -114,13 +114,13 @@ export default function About() {
         icon: GraduationCap,
       },
       {
-        label: "Focus",
-        value: "Web, Data & Machine Learning",
-        icon: Layers,
+        label: "Primary Focus",
+        value: "AI Engineering",
+        icon: Brain,
       },
       {
-        label: "Goal",
-        value: "Technology Internship",
+        label: "Approach",
+        value: "Building Practical AI Solutions",
         icon: Target,
       },
     ],
@@ -246,25 +246,18 @@ export default function About() {
           >
             <div className="space-y-4">
               <p className="text-sm font-medium leading-relaxed text-slate-600">
-                I am an Informatics Engineering student at Dian Nuswantoro
-                University with experience in web application development,
-                data processing, database integration, application testing,
-                and system documentation through academic and team projects.
+                I am an Informatics Engineering student at Dian Nuswantoro University
+                with experience in web application development, data processing,
+                database integration, application testing, and system documentation
+                through individual and team projects.
               </p>
 
               <p className="text-sm font-medium leading-relaxed text-slate-600">
-                I have contributed to projects such as Talang.in, VMatch, and
-                SITEMU, covering transaction management, service workflows,
-                user dashboards, authentication, data storage, and application
-                testing.
+                My current focus is AI Engineering, particularly in building practical
+                solutions that combine Machine Learning, data processing, and web
+                technologies. I am open to opportunities in AI, data, software
+                development, and collaborative digital projects.
               </p>
-
-              <p className="text-sm font-medium leading-relaxed text-slate-600">
-                I am interested in applying and developing my technical skills
-                through internship opportunities involving web development,
-                data processing, information systems, or Machine Learning.
-              </p>
-
               <div className="flex flex-wrap gap-1.5">
                 {focusChips.map((chip) => (
                   <SkillChip
