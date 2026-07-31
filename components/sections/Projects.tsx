@@ -18,8 +18,12 @@ type Project = {
   desc: string;
   tags: string[];
   imageUrl: string;
-  href: string;
+  href?: string;
 };
+
+const IMG_TALANGIN = "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1785531628/fiacahya-snack.vercel.app_nnp2bl.png";
+const IMG_VMATCH = "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1785531630/fiacahya-snack.vercel.app_1_egwmuf.png";
+const IMG_CHURN = "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1785531614/fiacahya-snack.vercel.app_2_n9vrh1.png";
 
 const IMG_SITEMU =
   "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1772634213/5_mkr5ld.png";
@@ -53,61 +57,78 @@ export default function Projects() {
 
   const projects: Project[] = useMemo(
     () => [
-
       {
         id: 1,
-        title: "SITEMU - Lost & Found Platform",
-        desc: "A web platform for reporting and discovering lost items within the university environment. Designed to help students reconnect with their belongings through a centralized reporting system.",
-        tags: ["Next.js", "Tailwind", "Database"],
-        imageUrl: IMG_SITEMU,
-        href: "https://sitemudinus.vercel.app/"
+        title: "Talang.in - Group Expense Management",
+        desc: "A group expense management application for recording transactions, splitting expenses, managing groups, tracking balances, and viewing transaction history. It also includes automated transaction input from informal Indonesian sentences.",
+        tags: ["React", "Supabase", "FastAPI"],
+        imageUrl: IMG_TALANGIN,
+        href: "https://talang-in-bay.vercel.app/",
       },
-
       {
         id: 2,
-        title: "TravelEase - Smart Travel Budget Planner",
-        desc: "A Machine Learning-powered travel budgeting tool that helps users estimate travel costs and plan efficient trips based on personalized preferences.",
-        tags: ["Python", "Streamlit", "Machine Learning"],
-        imageUrl: IMG_TRAVELEASE,
-        href: "https://travelease.streamlit.app/"
+        title: "VMatch - Managed Interior Service Platform",
+        desc: "A managed interior service web application that supports customer requests, task management, vendor coordination, progress monitoring, reporting, and quality control through user, administrator, and vendor dashboards.",
+        tags: ["Next.js", "TypeScript", "Web App"],
+        imageUrl: IMG_VMATCH,
+        href: "https://vmatch-pink.vercel.app/",
       },
-
       {
         id: 3,
-        title: "Fiacahya Snack - E-Commerce with AI Chatbot",
-        desc: "An e-commerce website for a local snack business featuring an integrated AI chatbot that assists users in exploring products and receiving recommendations.",
-        tags: ["Next.js", "OpenAI API", "Chatbot"],
-        imageUrl: IMG_FIACAHYA,
-        href: "https://fiacahya-snack.vercel.app/"
+        title: "Customer Churn Prediction - ML Web App",
+        desc: "A Machine Learning web application for analyzing customer data and predicting churn risk. The application includes data analysis, model performance, customer insights, and interactive prediction features.",
+        tags: ["Python", "Scikit-Learn", "Streamlit"],
+        imageUrl: IMG_CHURN,
+        href: "https://churn-prediction-up-cy.streamlit.app/",
       },
-
       {
         id: 4,
-        title: "To-Do List Task Manager – Top 20 Finalist",
-        desc: "A web-based task management application built to improve productivity and task organization. This project was selected as one of the Top 20 finalists among multiple submissions, highlighting its usability and implementation quality.",
-        tags: ["JavaScript", "Frontend", "Finalist"],
-        imageUrl: IMG_TODO,
-        href: "https://glowing-sfogliatella-9b0715.netlify.app/"
+        title: "SITEMU - Lost & Found Platform",
+        desc: "A web platform for reporting and discovering lost items within the university environment, featuring image uploads, search, categories, location filters, authentication, and data storage.",
+        tags: ["Next.js", "Supabase", "Tailwind CSS"],
+        imageUrl: IMG_SITEMU,
+        href: "https://sitemudinus.vercel.app/",
       },
-
       {
         id: 5,
-        title: "Kos Maintenance Management System",
-        desc: "A web-based system designed to manage boarding house maintenance requests and track facility repairs efficiently.",
-        tags: ["Next.js", "CRUD", "Web App"],
-        imageUrl: IMG_KOS,
-        href: "https://kos-maintenance.vercel.app/"
+        title: "TravelEase - Travel Recommendation App",
+        desc: "A travel recommendation application that processes and ranks destination data based on budget, location, and activity preferences.",
+        tags: ["Python", "Streamlit", "Data Processing"],
+        imageUrl: IMG_TRAVELEASE,
+        href: "https://travelease.streamlit.app/",
       },
-
       {
         id: 6,
+        title: "Fiacahya Snack - E-Commerce Website",
+        desc: "An e-commerce website for a local snack business with product exploration features and an integrated chatbot to assist users.",
+        tags: ["Next.js", "Chatbot", "E-Commerce"],
+        imageUrl: IMG_FIACAHYA,
+        href: "https://fiacahya-snack.vercel.app/",
+      },
+      {
+        id: 7,
+        title: "SoLearn - Task Management Web App",
+        desc: "A web-based task management application with create, update, delete, and persistent data features. This project achieved a final score of 89.42 and was selected as a Top 20 Final Project Winner.",
+        tags: ["JavaScript", "LocalStorage", "Top 20 Winner"],
+        imageUrl: IMG_TODO,
+        href: "https://glowing-sfogliatella-9b0715.netlify.app/",
+      },
+      {
+        id: 8,
+        title: "Kos Maintenance Management System",
+        desc: "A web-based system for submitting boarding house maintenance requests and tracking the progress of facility repairs.",
+        tags: ["Next.js", "CRUD", "Web App"],
+        imageUrl: IMG_KOS,
+        href: "https://kos-maintenance.vercel.app/",
+      },
+      {
+        id: 9,
         title: "Temperature Converter Web App",
-        desc: "A responsive web application that converts temperature values across different units with a simple and intuitive interface.",
+        desc: "A responsive web application that converts temperature values across multiple units through a simple and intuitive interface.",
         tags: ["HTML", "JavaScript", "Frontend"],
         imageUrl: IMG_TEMP,
-        href: "https://konversisuhu-42a8bc.netlify.app/"
-      }
-
+        href: "https://konversisuhu-42a8bc.netlify.app/",
+      },
     ],
     []
   );
@@ -335,8 +356,8 @@ export default function Projects() {
                             <span
                               key={tag}
                               className={`text-[9px] font-mono px-2 py-1 rounded border ${tag.includes("Top")
-                                  ? "bg-yellow-500/20 text-yellow-300 border-yellow-400/30"
-                                  : "bg-blue-900/30 text-blue-300 border-blue-500/20"
+                                ? "bg-yellow-500/20 text-yellow-300 border-yellow-400/30"
+                                : "bg-blue-900/30 text-blue-300 border-blue-500/20"
                                 }`}
                             >
                               {tag}
