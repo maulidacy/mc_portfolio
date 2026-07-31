@@ -187,7 +187,7 @@ export default function IntroScreen({ onDone }: { onDone: () => void }) {
               animate={{ opacity: readyToNext ? 0.65 : 0 }}
               className="text-right font-mono text-[9px] tracking-[0.35em] text-slate-700 uppercase"
             >
-              INTERNSHIP_STATUS: OPEN
+              STATUS: OPEN_TO_OPPORTUNITIES
             </m.p>
 
           </div>

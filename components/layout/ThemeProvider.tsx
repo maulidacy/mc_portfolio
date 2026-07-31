@@ -1,4 +1,3 @@
-// components/layout/ThemeProvider.tsx
 "use client";
 
 export default function ThemeProvider({

@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 
 const PROFILE_IMG =
-  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1771850157/Desain_tanpa_judul_1_bqcnj4.png";
+  "https://res.cloudinary.com/dxdb3dj8f/image/upload/v1785534045/son_6_ao3uyp.png";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -137,7 +137,7 @@ export default function Hero() {
             <motion.div variants={itemVariants}>
               <div className="inline-flex items-center gap-2 rounded-md border border-blue-900/30 bg-white/55 backdrop-blur px-3 py-1 text-[10px] font-mono font-extrabold tracking-[0.2em] text-slate-900 uppercase shadow-sm">
                 <Code2 className="h-4 w-4" />
-                [ AVAILABLE_FOR_INTERNSHIP ]
+                [ AVAILABLE_FOR_OPPORTUNITIES ]
               </div>
             </motion.div>
 

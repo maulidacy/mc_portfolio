@@ -233,7 +233,7 @@ export default function Navbar() {
                       ))}
 
                       <a
-                        href="/cv.pdf"
+                        href="/cv_maulidacahyakurnia.pdf"
                         className="mt-4 flex items-center justify-center gap-2 rounded border border-blue-900 bg-blue-900/10 py-3 text-xs font-black text-blue-400 uppercase tracking-tighter transition-all active:scale-95"
                       >
                         <Download size={14} /> get_cv.sh

@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useRef, useMemo, memo } from "react";
+import React, { useMemo, useRef, memo } from "react";
 import { motion, useInView, type Variants } from "framer-motion";
-
 import {
   Brain,
   LineChart,
@@ -10,12 +9,13 @@ import {
   Code2,
   Wrench,
   Laptop,
-  Sparkles,
   Terminal,
   Cpu,
   Database,
   Code,
   Layout,
+  Server,
+  GitBranch,
 } from "lucide-react";
 
 type ChipItem = {
@@ -23,28 +23,48 @@ type ChipItem = {
   Icon: React.ElementType;
 };
 
+type SkillGroup = {
+  title: string;
+  subtitle: string;
+  Icon: React.ElementType;
+  chips: ChipItem[];
+};
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+    },
   },
 };
 
 const itemVariants: Variants = {
-  hidden: { opacity: 0, y: 15 },
+  hidden: {
+    opacity: 0,
+    y: 15,
+  },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.4, ease: "easeOut" },
+    transition: {
+      duration: 0.4,
+      ease: "easeOut",
+    },
   },
 };
 
-const SkillChip = memo(function SkillChip({ label, Icon }: ChipItem) {
+const SkillChip = memo(function SkillChip({
+  label,
+  Icon,
+}: ChipItem) {
   return (
     <div className="flex items-center gap-2 rounded border border-slate-700 bg-slate-900/50 px-2.5 py-1 transition-all hover:border-blue-900 hover:bg-slate-800">
       <Icon className="h-3 w-3 text-slate-400" />
-      <span className="text-[11px] font-mono font-medium text-slate-300 uppercase tracking-tight">
+
+      <span className="font-mono text-[11px] font-medium uppercase tracking-tight text-slate-300">
         {label}
       </span>
     </div>
@@ -56,12 +76,7 @@ const SkillCard = memo(function SkillCard({
   subtitle,
   Icon,
   chips,
-}: {
-  title: string;
-  subtitle: string;
-  Icon: React.ElementType;
-  chips: ChipItem[];
-}) {
+}: SkillGroup) {
   return (
     <motion.div
       variants={itemVariants}
@@ -73,8 +88,9 @@ const SkillCard = memo(function SkillCard({
           <div className="h-2 w-2 rounded-full bg-slate-700 transition-colors group-hover:bg-yellow-900/80" />
           <div className="h-2 w-2 rounded-full bg-slate-700 transition-colors group-hover:bg-green-900/80" />
         </div>
-        <div className="text-[9px] font-mono uppercase tracking-widest text-slate-500">
-          sys_module_v1.0
+
+        <div className="font-mono text-[9px] uppercase tracking-widest text-slate-500">
+          skill_module
         </div>
       </div>
 
@@ -88,6 +104,7 @@ const SkillCard = memo(function SkillCard({
             <h3 className="text-md font-bold tracking-tight text-white">
               {title}
             </h3>
+
             <p className="mt-1 text-[12px] leading-tight text-slate-500">
               {subtitle}
             </p>
@@ -105,122 +122,146 @@ const SkillCard = memo(function SkillCard({
 });
 
 export default function Skills() {
+  const ref = useRef<HTMLDivElement | null>(null);
 
-  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: 0.1,
+    once: true,
+  });
 
-  const isInView = useInView(ref, { amount: 0.1, once: true });
-
-  const { ml, engineering, environment } = useMemo(() => ({
-
-    ml: [
-      { label: "Python", Icon: Code },
-      { label: "Pandas", Icon: LineChart },
-      { label: "NumPy", Icon: Cpu },
-      { label: "Scikit-Learn", Icon: Brain },
-      { label: "Preprocessing", Icon: Database },
+  const skillGroups: SkillGroup[] = useMemo(
+    () => [
+      {
+        title: "Web Development",
+        subtitle: "Frontend interfaces and web applications",
+        Icon: Layout,
+        chips: [
+          { label: "React", Icon: Code2 },
+          { label: "Next.js", Icon: Layout },
+          { label: "JavaScript", Icon: Code },
+          { label: "TypeScript", Icon: Code },
+          { label: "HTML", Icon: Code },
+          { label: "CSS", Icon: Layout },
+          { label: "Tailwind CSS", Icon: Layout },
+        ],
+      },
+      {
+        title: "Data & Machine Learning",
+        subtitle: "Data processing and model development",
+        Icon: Brain,
+        chips: [
+          { label: "Python", Icon: Code },
+          { label: "Pandas", Icon: LineChart },
+          { label: "NumPy", Icon: Cpu },
+          { label: "Scikit-Learn", Icon: Brain },
+          { label: "TensorFlow", Icon: Brain },
+          { label: "Data Processing", Icon: Database },
+        ],
+      },
+      {
+        title: "Backend & Database",
+        subtitle: "Application data and backend services",
+        Icon: Server,
+        chips: [
+          { label: "FastAPI", Icon: Server },
+          { label: "Supabase", Icon: Database },
+          { label: "PostgreSQL", Icon: Database },
+          { label: "MySQL", Icon: Database },
+        ],
+      },
+      {
+        title: "Tools & Deployment",
+        subtitle: "Development workflow and deployment",
+        Icon: Wrench,
+        chips: [
+          { label: "Git", Icon: GitBranch },
+          { label: "GitHub", Icon: GitBranch },
+          { label: "VS Code", Icon: Laptop },
+          { label: "Jupyter Notebook", Icon: Terminal },
+          { label: "Google Colab", Icon: Terminal },
+          { label: "Vercel", Icon: Rocket },
+          { label: "Streamlit", Icon: Rocket },
+        ],
+      },
     ],
-
-    engineering: [
-      { label: "Next.js", Icon: Layout },
-      { label: "Vercel", Icon: Rocket },
-      { label: "Git/GitHub", Icon: Code2 },
-      { label: "API Design", Icon: Wrench },
-    ],
-
-    environment: [
-      { label: "VS Code", Icon: Laptop },
-      { label: "MySQL", Icon: Database },
-      { label: "Jupyter", Icon: Terminal },
-      { label: "OpenAI API", Icon: Sparkles },
-    ],
-
-  }), []);
+    []
+  );
 
   return (
-    <section id="skills" className="bg-transparent pt-10 pb-12 scroll-mt-24">
-
-      <div className="mx-auto w-full max-w-6xl px-6 lg:px-10" ref={ref}>
-
+    <section
+      id="skills"
+      className="scroll-mt-24 bg-transparent pb-12 pt-10"
+    >
+      <div
+        ref={ref}
+        className="mx-auto w-full max-w-6xl px-6 lg:px-10"
+      >
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
           className="mb-8 border-l-2 border-blue-900 pl-6"
         >
-
           <motion.div
             variants={itemVariants}
-            className="mb-2 text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-blue-700"
+            className="mb-2 inline-flex items-center gap-2 font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-blue-800"
           >
-
-            <div className="inline-flex items-center gap-2 text-[10px] font-mono font-bold uppercase tracking-[0.2em] text-blue-800 mb-2">
-              <Code2 className="h-4 w-4" />
-              [ Tools & Workflow ]
-            </div>
-
+            <Code2 className="h-4 w-4" />
+            [ Skills_Overview ]
           </motion.div>
 
           <motion.h2
             variants={itemVariants}
             className="text-3xl font-black tracking-tighter text-slate-900 sm:text-4xl"
           >
-            Tools & Technologies <span className="text-blue-900">I Work With</span>
+            Skills &amp;{" "}
+            <span className="text-blue-900">
+              Technologies
+            </span>
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
-            className="mt-2 max-w-xl text-sm font-medium leading-relaxed text-slate-600"
+            className="mt-2 max-w-2xl text-sm font-medium leading-relaxed text-slate-600"
           >
-            A practical toolkit I use to build ML projects and ship reliable
-            applications-from experimentation to deployment.
+            Technologies and tools I have used across web development,
+            data processing, machine learning, and team projects.
           </motion.p>
-
         </motion.div>
 
         <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={containerVariants}
-          className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-4 sm:grid-cols-2"
         >
-
-          <SkillCard
-            title="Machine Learning"
-            subtitle="Modeling & evaluation"
-            Icon={Brain}
-            chips={ml}
-          />
-
-          <SkillCard
-            title="Engineering"
-            subtitle="APIs, delivery & deployment"
-            Icon={Rocket}
-            chips={engineering}
-          />
-
-          <SkillCard
-            title="Environment"
-            subtitle="Tooling & data systems"
-            Icon={Wrench}
-            chips={environment}
-          />
-
+          {skillGroups.map((group) => (
+            <SkillCard
+              key={group.title}
+              {...group}
+            />
+          ))}
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+          animate={
+            isInView
+              ? { opacity: 1 }
+              : { opacity: 0 }
+          }
           transition={{ delay: 0.8 }}
-          className="mt-7 flex items-center justify-start gap-3 border-t border-slate-800 pt-5 font-mono text-[11px] text-slate-600"
+          className="mt-7 flex items-center gap-3 border-t border-slate-800 pt-5 font-mono text-[11px] text-slate-600"
         >
-          <span className="font-bold text-blue-900">maulidacy@root:</span>
+          <span className="font-bold text-blue-900">
+            maulidacy@portfolio:
+          </span>
+
           <span className="italic text-slate-400">
-            Engineering is the art of organized intelligence.
+            skills.load() --status:continuously_learning
           </span>
         </motion.div>
-
       </div>
-
     </section>
   );
 }
